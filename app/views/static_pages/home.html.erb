@@ -1,0 +1,21 @@
+<div class="hero">
+  <div class="hero-inner">
+    <a href="" class="hero-logo selfie"><%= image_tag 'avatar.jpg' %></a>
+    <div class="hero-copy">
+
+      <h1>Have you worked with Troy Rosenberg?</h1>
+
+      <p class='explanation'>
+      We are looking for reviews of your experiences of working with Troy Rosenberg. Simply write up what it is like to work with Troy!
+      </p>
+
+      <div class='review-banner'>
+        <%= link_to 'Write a Review!', new_review_path %>
+      </div>
+
+    </div>
+      <div class='get-inspired'>
+        Need some inspiration? <%= link_to 'Check out what everyone else is saying', reviews_path, id: 'inspiartion-link' %>
+    </div>
+  </div>
+</div>
