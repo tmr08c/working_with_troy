@@ -1,23 +1,17 @@
-<p id="notice"><%= notice %></p>
+<% @reviews.each do |review| %>
+  <div class='review'>
+    <div class='quote no-close-quote'>
+      <%= review.body %>
+    </div>
 
-<h1>Listing Reviews</h1>
+    <div class='source'>
+      <div class='source-name'>
+        - <%= review.name %>
+      </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Body</th>
-      <th>Name</th>
-      <th>Relationship</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @reviews.each do |review| %>
-      <tr>
-        <td><%= review.body %></td>
-        <td><%= review.name %></td>
-        <td><%= review.relationship %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <div class='source-relationship'>
+        <%= review.relationship %>
+      </div>
+    </div>
+  </div>
+<% end %>

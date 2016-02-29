@@ -1,0 +1,43 @@
+.review{
+  @include clearfix;
+  background-color: $main-color;
+  padding: 3em;
+  border-radius: 1.2em;
+  margin-bottom: 5em;
+}
+
+.quote{
+  font-size:  modular-scale(0);
+  font-style: italic;
+
+  &:before{
+    content: open-quote;
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-right: 0.1em;
+    vertical-align: -0.3em;
+    color: $main-gray;
+  }
+
+  &:after{
+    content: no-close-quote
+  }
+}
+
+.source{
+  float: right;
+  text-align: end;
+  margin-top: 1.5em;
+
+  .source-name{
+    font-size:  modular-scale(3);
+    color: $main-gray;
+  }
+
+  .source-relationship{
+    font-size:  modular-scale(0);
+    color: $main-gray;
+    font-style: italic;
+    margin-top: -1em;
+  }
+}
