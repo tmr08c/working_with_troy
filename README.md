@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/tmr08c/working_with_troy/badges/gpa.svg)](https://codeclimate.com/github/tmr08c/working_with_troy)
+
 # Working with troy
 
 ## Getting Started
