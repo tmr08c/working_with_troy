@@ -1,17 +1,1 @@
-<% @reviews.each do |review| %>
-  <div class='review'>
-    <div class='quote no-close-quote'>
-      <%= review.body %>
-    </div>
-
-    <div class='source'>
-      <div class='source-name'>
-        - <%= review.name %>
-      </div>
-
-      <div class='source-relationship'>
-        <%= review.relationship %>
-      </div>
-    </div>
-  </div>
-<% end %>
+<%= render @reviews %>
