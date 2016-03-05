@@ -15,6 +15,7 @@ describe 'static_pages/home.html.erb' do
 
   it 'have a link to view existing reviws' do
     render
+
     expect(rendered).to have_link(
       'inspiration-link',
       href: reviews_path
