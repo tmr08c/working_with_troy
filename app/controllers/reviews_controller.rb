@@ -16,7 +16,7 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
 
     if @review.save
-      redirect_to reviews_path, notice: 'Thank you for your review!'
+      redirect_to reviews_path, notice: "Thank you for your review!"
     else
       render :new
     end
