@@ -6,9 +6,8 @@
   $hero-background-bottom: #20392B;
   $hero-color: white;
   $gradient-angle: 10deg;
-  $hero-image: 'https://images.unsplash.com/photo-1416339684178-3a239570f315?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300';
 
-  @include background(url($hero-image));
+  @include background(image-url('hero-background.jpeg'));
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
