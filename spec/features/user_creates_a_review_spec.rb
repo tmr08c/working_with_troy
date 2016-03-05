@@ -2,7 +2,7 @@ require "spec_helper"
 
 feature "User creates a review" do
   scenario "a user leaves a review" do
-    visit root_path
+    visit new_review_path
 
     fill_in "What's it like working with Troy", with: "super cool"
     fill_in "Name", with: "John Doe"

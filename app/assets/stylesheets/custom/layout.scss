@@ -1,0 +1,14 @@
+body{
+  background-color: $main-orange;
+}
+
+div.outer-content{
+  margin-top: 5em;
+
+  // Grid Sytem
+  @include outer-container;
+  div.content{
+    @include span-columns(10);
+    @include shift(1);
+  }
+}

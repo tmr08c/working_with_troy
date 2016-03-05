@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  root 'reviews#new'
+  root 'static_pages#home'
+
   resources :reviews, only: [:index, :new, :create]
 end
