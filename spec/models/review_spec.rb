@@ -1,11 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Review, type: :model do
-  describe 'validations' do
-    context 'name' do
-    end
-  end
-
   describe '.all' do
     it 'should have the newest first' do
       old_review = FactoryGirl.create(:review, created_at: DateTime.yesterday)
