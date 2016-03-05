@@ -24,7 +24,7 @@ RSpec.describe ReviewsController, type: :controller do
   # ReviewsController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
-  describe "GET #index" do
+  describe 'GET #index' do
     it "assigns all reviews as @reviews" do
       review = FactoryGirl.create(:review)
       get :index, {}, valid_session
@@ -42,14 +42,14 @@ RSpec.describe ReviewsController, type: :controller do
     end
   end
 
-  describe "GET #new" do
+  describe 'GET #new' do
     it "assigns a new review as @review" do
       get :new, {}, valid_session
       expect(assigns(:review)).to be_a_new(Review)
     end
   end
 
-  describe "POST #create" do
+  describe 'POST #create' do
     context "with valid params" do
       let(:valid_attributes) do
         {
